@@ -1,0 +1,19 @@
+name: Validate
+
+on:
+  pull_request:
+  push:
+    branches: [main, develop]
+
+permissions:
+  contents: read
+
+jobs:
+  markdown:
+    name: markdown
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6.0.2
+      - name: Run markdownlint
+        run: npx markdownlint-cli "**/*.md"
