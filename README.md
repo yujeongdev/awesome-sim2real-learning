@@ -1,6 +1,15 @@
-# Awesome Sim2Real Learning [![Awesome](https://awesome.re/badge.svg)](https://awesome.re) ![Status](https://img.shields.io/badge/status-seed-blue) ![Focus](https://img.shields.io/badge/focus-policy%20transfer-8A2BE2) ![License](https://img.shields.io/badge/license-CC--BY--4.0-green)
+<div align="center">
+
+# 🧠 Awesome Sim2Real Learning
+
+[![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
+![Status](https://img.shields.io/badge/status-seed-blue)
+![Focus](https://img.shields.io/badge/focus-policy%20transfer-8A2BE2)
+![License](https://img.shields.io/badge/license-CC--BY--4.0-green)
 
 **Curated papers, systems, benchmarks, and engineering recipes for learning robot behavior in simulation and transferring it to the real world.**
+
+</div>
 
 ---
 
