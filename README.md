@@ -13,10 +13,9 @@
 
 ---
 
-## Sibling Projects
+## Sibling Project
 
-- [Awesome Sim-Ready 3D Asset Generation](https://github.com/yujeongdev/awesome-sim-ready) — object-level assets: geometry, articulation, physical properties, simulator formats, and asset validation.
-- [Awesome Sim2Real Environments](https://github.com/yujeongdev/awesome-sim2real-environments) — environment-level systems: scenes, digital twins, sensors, physics, calibration, and validation.
+- [Awesome Real2Sim Robotics](https://github.com/yujeongdev/awesome-real2sim) — simulation substrate: sim-ready assets, environments, digital twins, calibration, and validation.
 - [Awesome Sim2Real Learning](https://github.com/yujeongdev/awesome-sim2real-learning) — policy-level transfer: RL/IL, domain randomization, curricula, policy evaluation, and deployment case studies.
 
 ## Aim of the Project
