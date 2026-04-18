@@ -105,6 +105,10 @@ Ask:
 
 ## 7. Evaluate like a deployment engineer
 
+Read:
+
+- RoboLab
+
 A strong sim2real result should report:
 
 - real robot trials, not only videos;
