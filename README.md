@@ -285,6 +285,11 @@ See also: [docs/reading-path.md](docs/reading-path.md), [docs/sim2real-learning-
 
 ## ✅ Evaluation and Deployment
 
+- **[2026] RoboLab — A High-Fidelity Simulation Benchmark for Analysis of Task Generalist Policies** `[VLA][MAN][EVAL]` 🧰 📦 ⚠️
+  Robot- and policy-agnostic Isaac Lab benchmark with 120 manipulation tasks for evaluating real-world-data-trained task-generalist policies under controlled visual, relational, and procedural axes. Links: [project](https://research.nvidia.com/labs/srl/projects/robolab/) · [paper](https://arxiv.org/abs/2604.09860) · [code](https://github.com/NVLabs/RoboLab)
+  *Why engineers care:* gives a reproducible simulation harness for stress-testing VLA/generalist policies, language specificity, object confusion, and sensitivity to environment parameters before real deployment.
+  *Caveat:* primarily simulation-side evaluation; treat real-world transfer claims as hypotheses unless paired with robot trials or sim-real correlation.
+
 See [docs/evaluation-checklist.md](docs/evaluation-checklist.md).
 
 A sim2real learning result is stronger when it reports:
