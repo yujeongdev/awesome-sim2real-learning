@@ -126,7 +126,7 @@ Usually out of scope:
 2. **[2019] SimOpt / Automatic Domain Randomization** — close the loop with real evidence or adaptive distributions.
 3. **[2021] RMA and locomotion transfer** — learn adaptation mechanisms for hidden physical parameters.
 4. **[2024] RialTo / TRANSIC** — use digital twins or human correction to robustify manipulation policies.
-5. **[2025] ReBot / Sim-and-Real Co-Training** — synthetic video or sim+real demonstrations for VLA/diffusion policies.
+5. **[2025-2026] ReBot / Sim-and-Real Co-Training / Mechanistic Analysis** — synthetic video scaling plus empirical/theoretical guidance for mixing sim and real demonstrations.
 6. **[2026] Interactive World Simulator / World4RL** — learned simulators as training/evaluation environments.
 7. **[2026] MolmoBot / Scaling VLA RL** — simulation as the primary scaling substrate for robot foundation policies.
 
@@ -222,6 +222,11 @@ See also: [docs/reading-path.md](docs/reading-path.md), [docs/sim2real-learning-
   Studies how simulated and real demonstrations should be mixed for diffusion-policy manipulation. Links: [project](https://sim-and-real-cotraining.github.io/) · [paper](https://arxiv.org/abs/2509.14042)
   *Why engineers care:* turns “add sim data” into measured design rules around physics gap, visual gap, and mixing ratios.
   *Caveat:* focused on planar pushing; generalization to other manipulation types requires care.
+
+- ⭐ **[2026] A Mechanistic Analysis of Sim-and-Real Co-Training in Generative Robot Policies** `[IL][DA][MAN][EVAL][V]` 🧪
+  Reads sim-and-real diffusion-policy co-training as two coupled effects: structured representation alignment is the primary driver, while importance reweighting from the mixing ratio is secondary. On three manipulation tasks with 50 real demos and ~3000 MimicGen source trajectories, it finds balanced ratios around 0.016-0.3 and shows a simple CFG-ADDA variant improving average real success to 21/30 versus 15.3/30 for plain co-training. Links: [project](https://science-of-co-training.github.io/) · [paper](https://arxiv.org/abs/2604.13645)
+  *Why engineers care:* this is one of the clearest papers on why sim data helps or hurts: good transfer needs partially aligned sim/real features that still preserve domain identity, not blind feature collapse; the paper also gives a practical starting range for mixing-ratio sweeps.
+  *Caveat:* the evidence is still diffusion-style imitation on three manipulation tasks; the theory-guided recipe is promising, but not yet validated as a universal rule for RL, locomotion, or cross-embodiment co-training.
 
 - **[2023] MimicGen — Data Generation System for Scalable Robot Learning using Human Demonstrations** `[IL][MAN][V]` 🧰 📦
   Generates large-scale simulation demonstrations from a small number of human demonstrations. Links: [project](https://mimicgen.github.io/) · [paper](https://arxiv.org/abs/2310.17596)
