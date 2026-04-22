@@ -66,6 +66,7 @@ Read:
 - MimicGen
 - ReBot
 - Sim-and-Real Co-Training
+- A Mechanistic Analysis of Sim-and-Real Co-Training in Generative Robot Policies
 - ComSim
 
 Ask:
